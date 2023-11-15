@@ -1,0 +1,51 @@
+Data Layout for DB1
+
+Look into Keap Data and ClickUp Data Structres
+
+
+CREATE DATABASE testDB1;
+
+CREATE TABLE Company_data (
+
+	CompanyID int, 
+	CompanyName varchar(255),
+	StatusOpp varchar(255), //Connected to StatusOpps Table
+	Revenue int,
+	EBITDA int,
+	Region varchar(255),
+	Industry varchar(255),
+	OwnerGoals varchar(255) 
+	PRIMARY KEY (CompanyID)
+);
+
+
+CREATE TABLE StatusOpps (
+	Status varchar(255),  //Open, Nuture, Unresponsive, Out of Process 
+	PreDS (DATATYPE?),
+	PostDS (DATATYPE?),
+	MissingData varchar(255)
+	PreBlast (DATATYPE?),
+	OnBlast (DATATYPE?),
+	PreBS (DATATYPE?),
+	PostBS (DATATYPE?),
+	IOI (DATATYPE?),
+	LOI (DATATYPE?),
+	
+	PRIMARY KEY (Status)
+);
+
+
+
+// IDEA create status table for the four values boolean 
+
+CREATE TABLE Status (
+	Open BOOLEAN,
+	Nuture BOOLEAN,
+	Unresponsive BOOLEAN,
+	OutProcess BOOLEAN
+	//PRIMARY Key needed? 
+);
+
+
+
+
