@@ -1,7 +1,8 @@
 // Main Page Connected to DB
 
-// Pull in CLickUp API
-// Display Data 
+// PULL Call to Keap API
+
+// POST Call to DB1 Location
 
 
 //Filter Functionality when creating the pull request? or pull all data
